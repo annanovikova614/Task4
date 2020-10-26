@@ -3,10 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        double sum1 = calculateTheFirstResult();
-        double sum2 = calculateTheSecondResult();
-        calculateTheFirstResult();
-        calculateTheSecondResult();
+        double sum1 = calculateFirstResult();
+        double sum2 = calculateSecondResult();
+        calculateFirstResult();
+        calculateSecondResult();
         printResultsOfCalculation(sum1,sum2);
     }
 
@@ -16,19 +16,19 @@ public class Main {
         System.out.printf("Результат второго вычисления %.3f", sum2);
     }
 
-    public static double calculateTheFirstResult() {
+    public static double calculateFirstResult() {
         double sum1 = 0;
-            for (int i = 1; i < 51; i++) {
-                sum1 += 1.0 / (i * i * i);
-            }
+        for (int i = 1; i < 51; i++) {
+            sum1 += 1.0 / (i * i * i);
+        }
         return sum1;
     }
 
-    public static double calculateTheSecondResult() {
+    public static double calculateSecondResult() {
         double sum2 = 0;
-            for (int i = 2; i < 129; i += 2) {
-                sum2 += 1.0 / (i * i);
-            }
+        for (int i = 2; i < 129; i += 2) {
+            sum2 += 1.0 / (i * i);
+        }
         return sum2;
     }
 }
