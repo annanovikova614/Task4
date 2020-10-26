@@ -7,7 +7,7 @@ public class Main {
         double sum2 = calculateSecondResult();
         calculateFirstResult();
         calculateSecondResult();
-        printResultsOfCalculation(sum1,sum2);
+        printResultsOfCalculation(sum1, sum2);
     }
 
     private static void printResultsOfCalculation(double sum1, double sum2) {
